@@ -1,0 +1,323 @@
+/*
+	**************************** GENERALES **************************
+*/
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'Roboto Slab';
+  background-color: tan; }
+
+.subtitleMain {
+  font-size: 20px;
+  border: 3px solid  white;
+  padding: 0% 15% 0% 15%; }
+
+.genericPage {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+  height: 700px; }
+
+.paragraphJust {
+  text-align: justify;
+  line-height: 30px; }
+
+.titleNumber {
+  color: #d19226;
+  font-size: 60px; }
+
+.subtitleNumber {
+  font-size: 30px; }
+
+.titleText {
+  color: #d19226;
+  font-size: 16px; }
+
+/*
+	**************************** PORTADA ****************************
+*/
+.portada {
+  margin-top: 10%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .portada__title {
+    text-align: center;
+    background-color: black;
+    padding: 0% 5% 0% 5%;
+    opacity: 70%;
+    position: absolute;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%; }
+  .portada__title p {
+    text-align: center; }
+  .portada h1 {
+    color: white;
+    font-size: 60px;
+    letter-spacing: 7px; }
+  .portada p {
+    color: white;
+    border: 3px solid  white;
+    font-size: 20px;
+    padding: 0% 2% 0% 2%; }
+  .portada img {
+    height: 100%;
+    width: 100%; }
+
+/*
+	**************************** 1 PAGINA ***************************
+*/
+.intro {
+  background-color: white;
+  height: auto; }
+  .intro img {
+    width: 100%;
+    width: 100%; }
+  .intro__content {
+    display: inline-block;
+    padding: 5%; }
+    .intro__content h2 {
+      margin-top: 0px; }
+    .intro__content__title {
+      display: inline-block;
+      width: 30%; }
+    .intro__content__text {
+      display: inline-block;
+      width: 50%;
+      float: right; }
+
+/*
+	**************************** ARQUITEC1 ***************************
+*/
+.arquitec1 {
+  background-color: white;
+  display: inline-block; }
+  .arquitec1 img {
+    width: 60%;
+    height: 70%;
+    display: inline-block;
+    float: left; }
+  .arquitec1__content {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 40%;
+    height: 100px;
+    padding: 7%; }
+    .arquitec1__content__text {
+      padding-top: 20%;
+      float: right; }
+    .arquitec1__content__titleNumber {
+      margin-top: 0px; }
+
+/*
+	**************************** ARQUITEC2 ***************************
+*/
+.arquitec2 {
+  background-color: white;
+  display: inline-block; }
+  .arquitec2 img {
+    margin-top: 10%;
+    width: 55%;
+    height: 70%;
+    display: inline-block;
+    float: left; }
+  .arquitec2__title {
+    position: absolute;
+    margin-left: 39%;
+    margin-top: 6%; }
+  .arquitec2__content {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 45%;
+    margin-top: 10%;
+    padding: 7% 7% 0% 17%; }
+    .arquitec2__content__text {
+      padding-top: 20%;
+      float: right;
+      text-align: justify; }
+    .arquitec2__content__text img {
+      width: 100%;
+      height: 20%;
+      padding-bottom: 5%; }
+
+/*
+	**************************** FOOTER ***************************
+*/
+.footer {
+  height: 700px;
+  margin-top: 10%;
+  margin-bottom: 10%; }
+  .footer__image {
+    display: flex;
+    height: 700px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(46a42cf93030f0d8aad7962e24ce4454.jpg);
+    background-position: center;
+    /* Center the image */
+    background-size: cover;
+    opacity: 0.7; }
+    .footer__image__title {
+      text-align: center;
+      font-size: 25px;
+      color: white;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .footer__image__title--subtitle {
+        margin-top: -10px; }
+  .footer__icons {
+    display: flex;
+    height: 100px;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0% 30% 0% 30%; }
+    .footer__icons a {
+      color: #d19226; }
+
+/*
+	ELEMENTOS BAJO EL FOOTER
+*/
+.subfooter {
+  text-align: center;
+  font-size: 70px;
+  font-style: bold;
+  margin: 12% 0% 5% 0%; }
+
+/*
+	*****************************************************************
+	************************** RESPONSIVE ***************************
+	*****************************************************************
+*/
+/*
+	IPHONE 6/7/8 NORMAL
+*/
+@media only screen and (max-width: 375px) {
+  /*
+		***** GENERALES *****
+	*/
+  body {
+    background-color: tan;
+    margin: 0px; }
+  .genericPage {
+    height: 10%; }
+  .titleNumber {
+    margin: 0px; }
+  .subtitleNumber {
+    margin: 0px; }
+  .titleText {
+    margin: 10% 0% 0% 0%; }
+  /*
+		***** PORTADA *****
+	*/
+  .portada {
+    margin-top: 0px; }
+    .portada__title {
+      margin-top: 30%;
+      top: 20%; }
+    .portada img {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover; }
+    .portada h1 {
+      color: white;
+      font-size: 30px;
+      letter-spacing: 7px; }
+  /*
+		***** INTRO *****
+	*/
+  .intro img {
+    height: 200px;
+    width: 100vw;
+    object-fit: cover; }
+  .intro__content {
+    display: block;
+    height: auto;
+    padding: 5%; }
+    .intro__content h2 {
+      margin-top: 0px; }
+    .intro__content__title {
+      position: relative;
+      display: block;
+      margin-left: 0%;
+      margin-top: 0%;
+      text-align: center;
+      width: 100%;
+      height: 20%; }
+    .intro__content__text {
+      display: block;
+      width: 100%;
+      float: none; }
+  /*
+		***** ARQUITEC1 *****
+	*/
+  .arquitec1 img {
+    height: 200px;
+    width: 100vw;
+    object-fit: cover;
+    float: none; }
+  .arquitec1__content {
+    display: block;
+    height: auto;
+    padding: 5%;
+    width: 100%; }
+    .arquitec1__content h2 {
+      margin-top: 0px; }
+    .arquitec1__content__title {
+      display: block;
+      text-align: center;
+      width: 100%;
+      height: auto; }
+    .arquitec1__content__text {
+      display: block;
+      width: 100%;
+      padding-top: 0%;
+      float: none; }
+  /*
+		***** ARQUITEC2 *****
+	*/
+  .arquitec2 img {
+    margin-top: 0%;
+    height: 200px;
+    width: 100vw;
+    object-fit: cover;
+    float: none; }
+  .arquitec2__title {
+    position: relative;
+    text-align: center;
+    padding-top: 5%;
+    margin-left: 0px;
+    margin-top: 0px; }
+  .arquitec2__content {
+    padding: 0% 5% 5% 5%;
+    width: 100%;
+    margin-top: 0px; }
+    .arquitec2__content__text {
+      padding-top: 0%; }
+    .arquitec2__content__text img {
+      margin-left: 25%;
+      margin-top: 5%;
+      width: 50%;
+      height: 20%; }
+  /*
+		***** FOOTER *****
+	*/
+  .footer__image {
+    height: 100vh; }
+    .footer__image__title {
+      font-size: 12px; }
+  .footer__icons {
+    padding: 0% 10% 0% 10%; }
+  /*
+		***** ELEMENTOS BAJO FOOTER ****
+	*/
+  .subfooter {
+    padding-top: 10%;
+    font-size: 40px; } }
+
+
+/*# sourceMappingURL=build.css.map*/

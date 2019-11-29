@@ -1,0 +1,237 @@
+@import "reset";
+
+body {
+    background-color: #FFE2BC;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+
+.section{
+    background-color: white;
+    width: 1080px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    &__image1{
+        background-image: url("https://i.imgur.com/mmVZxbz.jpg");
+        background-position: center;
+        margin-top: 150px;
+    }
+    &__image2{
+        display: inline-block;
+        width: 100%;
+        height: 60%;
+        background-image: url("https://asiamountains.net/upload/slide/slide-1960x857-07.jpg");
+        background-position: top;
+    }
+    &__image3{
+        width: 66%;
+        height: 72%;
+        background-image: url("https://www.atlasandboots.com/wp-content/uploads/2019/05/feat-image-1-most-beautiful-mountains-in-the-world.jpg");
+        background-position: top;
+        display: inline-block;
+    }
+    &__image4{
+        margin-top: 90px;
+        width: 60%;
+        height: 75%;
+        background-image: url("https://static.toiimg.com/thumb/64560386/mountain-peaks-unconquered.jpg?width=748&height=499");
+        background-position: top;
+    }
+    &__image5{
+        margin-top: 90px;
+        width: 100%;
+        height: 30%;
+        background-image: url("https://www.thelocal.ch/userdata/images/article/1bd6fd47b4c9fffb226b40630ea257c4b69cb3f848668744ec734d588381c8ee.jpg");
+        background-position: top;
+    }
+    &__image6{
+        width: 1080px;
+        height: 500px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.493)), url("https://i.pinimg.com/originals/70/23/ea/7023ead68675c1ab05f6065979534239.jpg");
+        background-position: center;
+    }
+    &__icons{
+        @extend .section__text__align;
+        color: burlywood;
+        transform: translate(-50%, 570%);
+        font-size: 20px;
+        letter-spacing: 5px;
+        &--color{
+            color: burlywood;
+        }
+    }
+    &__text{
+        font-family: Helvetica;
+        color: white;
+        &__align{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            &--center{
+                @extend .section__text__align;
+                transform: translate(-50%, -50%);
+            }
+            &--left{
+                @extend .section__text__align;
+                transform: translate(-210%, 100%);
+            }
+            &--right{
+                @extend .section__text__align;
+                transform: translate(15%, 100%);
+                width: 400px;
+            }
+            &--section2{
+                display: inline-block;
+            }
+            &--section3{
+                @extend .section__text__align;
+                transform: translate(105%, -45%);
+                width: 230px;
+            }
+            &--section4Title{
+                @extend .section__text__align;
+                transform: translate(13%, -100%);
+            }
+            &--section4Info{
+                @extend .section__text__align;
+                transform: translate(136%, -40%);
+                width: 19%;
+                height: 70%;
+            }
+            &--section5{
+                @extend .section__text__align--center;
+                width: 1000px;
+                text-align: center;
+            }
+        }
+        &__title{
+            @extend .section__text;
+            letter-spacing: 7px;
+            font-size: 50px;
+            font-weight: 700;
+            &--num{
+                @extend .section__text__title;
+                color:orange;
+            }
+        }
+        &__sectionTitle{
+            @extend .section__text;
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            line-height: 50px;
+            &--name{
+                @extend .section__text__sectionTitle;
+                color:black;
+                line-height: 80px;
+            }
+            &--quotes{
+                @extend .section__text__sectionTitle;
+                margin-top: 30px;
+                font-size: 65px;
+            }
+        }
+        &__subtitle{
+            @extend .section__text;
+            color:orange;
+            font-size: 15px;
+            line-height: 3;
+            text-align: justify;
+            font-weight: 600;
+        }
+        &__box{
+            @extend .section__text;
+            border: 2px solid white;
+            padding: 1px 24px;
+            font-size: 15px;
+            text-align: center;
+            font-weight: 600;
+            &--front{
+                @extend .section__text__box;
+                margin-top: 15px;
+            }
+            &--back{
+                @extend .section__text__box;
+                margin-top: 25px;
+                width: 30%;
+                display: inline-block;
+            }
+            &--titleSection3{
+                height: 230px;
+            }
+        }
+        &__info{
+            @extend .section__text;
+            color:black;
+            font-size: 11px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        margin-bottom: 0px;
+    }
+    .footerResp{
+        width: 100%;
+        height: 100vh;
+        margin-top: 20px;
+    }
+    .sectionResp{
+        width: 100%;
+        height: 100vh;
+        margin-top: 0px;
+        display: block;
+        &--Medium{
+            @extend .sectionResp;
+            height: auto;
+            margin-top: 20px;
+        }
+        &__Text{
+            position: static;
+            transform: initial;
+            text-align: center;
+            margin-top: 20px;
+            width: auto;
+            height: auto;
+            &--Info{
+                padding: 20px;
+                text-align: justify;
+                margin: 0;
+            }
+            &--toOrange{
+                color:orange;
+            }
+            &--section2{
+                padding: 20px;
+                text-align: justify;
+                position: static;
+                transform: initial;
+            }
+            &--footer{
+                padding-bottom: 80px;
+                width: 90%;
+            }
+        }
+        &__Image{
+            position: relative;
+            width: 100%;
+            height: 300px;
+            margin-top: 0px;
+        }
+        &__Image5{
+            position: relative;
+            width: 70%;
+            height: 200px;
+            margin: 0 auto;
+        }
+        &__Image6{
+            height: 100vh;
+        }
+    }
+}

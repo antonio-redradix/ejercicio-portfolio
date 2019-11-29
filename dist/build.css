@@ -1,0 +1,279 @@
+/*General Classes*/
+body {
+  font-family: helvetica;
+  color: dimgray;
+  background-color: cornsilk; }
+
+/*Text Colors*/
+.secondaryTextColor {
+  color: white; }
+
+.terciaryTextColor {
+  color: burlywood; }
+
+.title--textColor {
+  color: black; }
+
+/*Text Properties*/
+p {
+  line-height: 1.8; }
+
+h1 {
+  font-size: 60px;
+  padding: 0px; }
+
+h2 {
+  font-size: 35px;
+  padding: 0px; }
+
+h3 {
+  font-size: 16px;
+  padding: 0px; }
+
+.text--small {
+  font-size: 12px; }
+
+.text--noMargin {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.text--justified {
+  text-align: justify; }
+
+.text--centered {
+  text-align: center;
+  margin: 0 auto; }
+
+.text--spaced {
+  letter-spacing: 4px; }
+
+.text--framed {
+  border: 2px solid white; }
+
+.text--quote {
+  font-size: 38px;
+  width: 680px; }
+
+.text--quotationMark {
+  font-size: 80px;
+  padding: 0px;
+  margin-top: 0;
+  margin-bottom: -30px; }
+
+.text--quoteAuthor--width {
+  margin-left: 220px;
+  margin-right: 220px; }
+
+/*Layout*/
+.space {
+  height: 60px; }
+  .space--small {
+    height: 10px; }
+
+.container {
+  background-color: red;
+  display: inline-block;
+  position: relative; }
+
+.icon {
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px; }
+
+/*General Elements*/
+.block {
+  margin: auto;
+  position: relative;
+  margin-bottom: 60px;
+  width: 65%;
+  height: 480px;
+  background-size: cover;
+  background-position: center; }
+
+.panel {
+  background-color: white; }
+  .panel--bottom {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+    .panel--bottom--medium {
+      height: 120px;
+      width: 100%;
+      position: absolute;
+      bottom: 0; }
+    .panel--bottom--small {
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      bottom: 0; }
+    .panel--bottom--smaller {
+      height: 30px;
+      width: 100%;
+      position: absolute;
+      bottom: 0; }
+  .panel--top--small {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0; }
+  .panel--right {
+    height: 480px;
+    width: 350px;
+    position: absolute;
+    right: 0; }
+    .panel--right--small {
+      height: 480px;
+      width: 300px;
+      position: absolute;
+      right: 0; }
+
+.floatingTitleContainer {
+  height: 480px;
+  width: 300px;
+  position: absolute;
+  right: 180px; }
+
+.row {
+  display: flex; }
+
+.column {
+  flex: 50%;
+  position: relative;
+  box-sizing: border-box; }
+
+/*Placement Classes*/
+.centered {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.padding--both {
+  padding-left: 50px;
+  padding-right: 50px; }
+
+.padding--left {
+  padding-left: 110px;
+  padding-right: 50px; }
+
+.image--withParentWidth {
+  width: 100%; }
+
+.image--bottomMargin {
+  margin-bottom: 14px; }
+
+.hideInDesktop {
+  display: none; }
+
+.debugHide {
+  display: none; }
+
+@media only screen and (max-width: 630px) {
+  /*General Classes*/
+  body {
+    width: 100vw;
+    margin: 0; }
+  /*Text Properties*/
+  p {
+    line-height: 1.2;
+    font-size: 20px; }
+  .text--small {
+    font-size: 15px; }
+  .text--mobileTitle {
+    text-align: center; }
+  .text--quote {
+    font-size: 20px;
+    width: 300px; }
+  .text--quotationMark {
+    font-size: 70px;
+    padding: 0px;
+    margin-top: 0;
+    margin-bottom: -30px; }
+  .text--quoteAuthor--width {
+    width: 200px;
+    margin: 0 auto; }
+  /*Layout*/
+  .space--small--inMobile {
+    height: 30px; }
+  /*General Elements*/
+  .block {
+    margin: auto;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 60px;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center; }
+  .panel--main--inMobile {
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+  .panel--bottom--inMobile {
+    height: 36px;
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+  .floatingTitleContainer {
+    position: relative; }
+  .row {
+    display: block; }
+  /*Placement Classes*/
+  .centered {
+    margin: 0 auto; }
+  .padding--inMobile {
+    padding-left: 50px;
+    padding-right: 50px; }
+  .noMargin--inMobile {
+    margin-bottom: 0; }
+  .image--withParentWidth {
+    width: 60%;
+    height: 40%;
+    display: block;
+    margin: auto; }
+  .image--bottomMargin {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .backgroundImage--inMobile--topCentered {
+    background-size: cover;
+    background-position: 50% -40px; }
+  .hideInMobile {
+    display: none; }
+  .hideInDesktop {
+    display: block; } }
+
+@media only screen and (min-width: 400px) and (max-width: 630px) {
+  .image--withParentWidth {
+    width: 40%;
+    height: 30%;
+    display: block;
+    margin: auto; }
+  .image--bottomMargin {
+    margin-top: 20px;
+    margin-bottom: 20px; } }
+
+@media only screen and (min-width: 630px) and (max-width: 1020px) {
+  body {
+    width: 100vw;
+    margin: 0; }
+  .text--quote {
+    font-size: 30px;
+    width: 600px; }
+  .text--quoteAuthor--width {
+    width: 160px;
+    margin: 0 auto; }
+  /*General Elements*/
+  .block {
+    margin: auto;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 60px;
+    width: 100vw;
+    background-size: cover;
+    background-position: center; } }
+
+
+/*# sourceMappingURL=build.css.map*/

@@ -1,0 +1,451 @@
+@import 'reset';
+
+body {
+    background-color: rgb(189, 180, 99);
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+// Header
+.face{
+    width: 950px;
+    height: 500px;
+    margin: 80px auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.4)), url(https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/tnc_86887171.jpg?crop=0,176,3032,1667&wid=4000&hei=2200&scl=0.758);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__title{
+        text-align: center;
+        color: white;
+        font-weight: 500;
+
+        &--txt{
+            font-size: 70px;
+            letter-spacing: 10px;
+        }
+    }
+
+    &__subtitle{
+
+        &--box{
+            border: 2px solid white;
+            width: 300px;
+            margin: 25px auto;
+        }
+
+        &--txt{
+            font-size: 20px;
+            height: 30px;
+            margin-top: 15px;
+        }
+    }
+}
+
+// Slides (estilos generales para todas las slides)
+.slide{
+    width: 950px;
+    min-height: 500px;
+    height: auto;
+    margin: 80px auto;
+    background-color: white;
+    
+    &__block{
+
+        &__title{
+    
+            &--num{
+            font-size: 60px;
+            color: rgb(7, 77, 1);
+            font-weight: 700;
+            padding-bottom: 20px;
+            }
+    
+            &--txt{
+                font-size: 50px;
+                font-weight: 600;
+            }
+        }
+    
+        
+        &__info{
+    
+            &--title{
+                font-size: 18px;
+                font-weight: 700;
+                color: rgb(7, 77, 1);
+            }
+    
+            &--txt{
+                text-align: justify;
+                margin: 15px 0px;
+            }
+        }
+    }
+}
+
+
+// Estilos individuales de slides 
+/* Slide 1 */
+.slide1{
+
+    &__pic{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    &__block{
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        &__title{
+            width: 40%;
+            padding-left: 40px;
+        }
+    
+        &__info{
+            width: 40%;
+            align-self: flex-end;
+            padding: 15px 30px;
+        }
+    }
+
+}
+
+/* Slide 2 */
+.slide2{
+    display: flex;
+
+    &__pic{
+        width: 75%;
+        
+        &>img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__block{
+        width: 35%;
+        padding: 60px 40px 30px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+/* Slide 3 */
+.slide3{
+    display: flex;
+    justify-content: space-between;
+
+    &__pic{
+        width: 55%;
+        height: 80%;
+        
+        &>img{
+            width: 100%;
+            padding: 90px 0px 45px 0px;
+            object-fit: cover;
+        }
+    }
+
+    &__block{
+        width: 20%;
+        padding-right: 60px;
+
+        &__title{
+            width: max-content;
+            position: relative;
+            left: -140%;
+            top: 20%;
+    
+            &--num{
+                color: white;
+            }
+        }
+    
+        &__info{
+            &--pic{
+                width: 100%;
+                padding: 30px 0px;
+            }
+        }
+    }
+    
+}
+
+// Footer
+.about{
+    width: 950px;
+    height: 500px;
+    margin: 80px auto;
+    background-color: white;
+
+    &__background{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.6)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Aachener_Wald_-_geo.hlipp.de_-_5415.jpg/1024px-Aachener_Wald_-_geo.hlipp.de_-_5415.jpg);
+        background-position: center;
+        height: 90%;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title{
+        text-align: center;
+        color: white;
+        font-weight: 500;
+
+        &--txt{
+            font-size: 50px;
+            padding: 20px;
+        }
+    }
+
+    &__subtitle{
+        border: 2px solid white;
+        font-size: 20px;
+        margin: 20px auto;
+        width: 35%;
+    }
+
+    &__icons{
+        font-size: 30px;
+        text-align: center;
+
+        &--icon{
+            margin: 10px;
+            color: rgb(7, 77, 1);
+            cursor: pointer;
+        }
+    }
+
+    &__more{
+        &__text{
+            font-size: 50px;
+            letter-spacing: 10px;
+            color: #074d01;
+            padding: 40px 0px;
+            text-align: center;
+            &--bold{
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+
+/**
+*Responsive
+*/
+
+// Large
+@media  only screen and (max-width: 1200px){
+    .face, .slide, .about{
+        width: 80%;
+    }
+
+    .slide2{
+        flex-direction: column;
+
+        &__pic{
+            width: 100%;
+
+            &>img{
+                height: 300px;
+                object-fit: cover;
+                object-position: bottom;
+            }
+        }
+
+        &__block{
+            width: 100%;
+            padding: 30px 0px 0px 0px;
+            justify-content: space-between;
+            flex-direction: row;
+
+            &__title{
+                width: 40%;
+                padding-left: 40px;
+            }
+        
+            &__info{
+                width: 40%;
+                align-self: flex-end;
+                padding: 15px 30px;
+            }
+        }
+
+    }
+    .slide3{
+        flex-direction: column;
+
+        &__pic{
+            width: 100%;
+
+            &>img{
+                height: 300px;
+                object-fit: cover;
+                object-position: bottom;
+                padding: 0px;
+            }
+        }
+
+        &__block{
+            width: 100%;
+            padding: 30px 0px 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            &__title{
+                width: 40%;
+                padding-left: 40px;
+                position: initial;
+                align-self: center;
+                
+                &--num{
+                    color: #074d01;
+                }
+            }
+        
+            &__info{
+                width: 40%;
+                align-self: flex-end;
+                padding: 15px 30px;
+            }
+        }
+
+    }
+}
+
+// Medium
+@media  only screen and (max-width: 768px){
+    .face{
+        &__title{
+            &--txt{
+                font-size: 60px;
+            }
+        }
+        &__subtitle{
+            &--box{
+                width: 265px;
+            }
+            &--txt{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .slide{
+        &__block{
+            flex-direction: column;
+
+            &__title{
+                width: 100%;
+    
+                &--num, &--txt{
+                    display: inline;
+                    font-size: 45px;
+                }
+            }
+    
+            &__info{
+                width: 85%;
+                align-self: flex-start;
+            }
+        }
+
+    }
+
+    .slide3{
+        
+        &__block{
+            &__title{
+                align-self: initial;
+            }
+            &__info{
+                &--pic{
+                    width: 80%;
+                    display:block;
+                    margin: 0px auto;
+                }
+            }
+        }
+    }
+
+    .about{
+        &__title{
+            &--txt{
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+
+// Responsive small
+@media  only screen and (max-width: 576px){
+    .face{
+        margin-top: 0px;
+        width: 100%;
+        height: 100vh;
+
+        &__title{
+            padding: 0px;
+        }
+    }
+    .slide{
+        width: 100%;
+        &__block{
+            &__title{
+                padding: 15px 0px 15px 30px;
+                width: 80%;
+                &--num, &--txt{
+                    font-size: 45px;
+                }
+            }
+            &__info{
+                padding: 15px 0px 15px 20px;
+                &--title{
+                    font-size: 25px;
+                }
+                &--txt{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .about{
+        width: 100%;
+        margin-bottom: 0px;
+
+        &__title{
+            &--txt{
+                font-size: 40px;
+            }
+        }
+
+        &__subtitle{
+            width: 50%;
+        }
+
+        &__icons{
+            padding: 10px 0px;
+            &--icon{
+                margin: 0px 20px;
+            }
+        }
+
+        &__more{
+            display: none;
+        }
+    }
+}

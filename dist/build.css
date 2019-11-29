@@ -1,0 +1,310 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration-line: none; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #bdb463;
+  font-family: 'PT Sans', sans-serif; }
+
+.face {
+  width: 950px;
+  height: 500px;
+  margin: 80px auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/tnc_86887171.jpg?crop=0,176,3032,1667&wid=4000&hei=2200&scl=0.758);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .face__title {
+    text-align: center;
+    color: white;
+    font-weight: 500; }
+    .face__title--txt {
+      font-size: 70px;
+      letter-spacing: 10px; }
+  .face__subtitle--box {
+    border: 2px solid white;
+    width: 300px;
+    margin: 25px auto; }
+  .face__subtitle--txt {
+    font-size: 20px;
+    height: 30px;
+    margin-top: 15px; }
+
+.slide {
+  width: 950px;
+  min-height: 500px;
+  height: auto;
+  margin: 80px auto;
+  background-color: white; }
+  .slide__block__title--num {
+    font-size: 60px;
+    color: #074d01;
+    font-weight: 700;
+    padding-bottom: 20px; }
+  .slide__block__title--txt {
+    font-size: 50px;
+    font-weight: 600; }
+  .slide__block__info--title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #074d01; }
+  .slide__block__info--txt {
+    text-align: justify;
+    margin: 15px 0px; }
+
+/* Slide 1 */
+.slide1__pic {
+  height: 300px;
+  width: 100%;
+  object-fit: cover; }
+
+.slide1__block {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between; }
+  .slide1__block__title {
+    width: 40%;
+    padding-left: 40px; }
+  .slide1__block__info {
+    width: 40%;
+    align-self: flex-end;
+    padding: 15px 30px; }
+
+/* Slide 2 */
+.slide2 {
+  display: flex; }
+  .slide2__pic {
+    width: 75%; }
+    .slide2__pic > img {
+      width: 100%;
+      object-fit: cover; }
+  .slide2__block {
+    width: 35%;
+    padding: 60px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+/* Slide 3 */
+.slide3 {
+  display: flex;
+  justify-content: space-between; }
+  .slide3__pic {
+    width: 55%;
+    height: 80%; }
+    .slide3__pic > img {
+      width: 100%;
+      padding: 90px 0px 45px 0px;
+      object-fit: cover; }
+  .slide3__block {
+    width: 20%;
+    padding-right: 60px; }
+    .slide3__block__title {
+      width: max-content;
+      position: relative;
+      left: -140%;
+      top: 20%; }
+      .slide3__block__title--num {
+        color: white; }
+    .slide3__block__info--pic {
+      width: 100%;
+      padding: 30px 0px; }
+
+.about {
+  width: 950px;
+  height: 500px;
+  margin: 80px auto;
+  background-color: white; }
+  .about__background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Aachener_Wald_-_geo.hlipp.de_-_5415.jpg/1024px-Aachener_Wald_-_geo.hlipp.de_-_5415.jpg);
+    background-position: center;
+    height: 90%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .about__title {
+    text-align: center;
+    color: white;
+    font-weight: 500; }
+    .about__title--txt {
+      font-size: 50px;
+      padding: 20px; }
+  .about__subtitle {
+    border: 2px solid white;
+    font-size: 20px;
+    margin: 20px auto;
+    width: 35%; }
+  .about__icons {
+    font-size: 30px;
+    text-align: center; }
+    .about__icons--icon {
+      margin: 10px;
+      color: #074d01;
+      cursor: pointer; }
+  .about__more__text {
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: #074d01;
+    padding: 40px 0px;
+    text-align: center; }
+    .about__more__text--bold {
+      font-weight: 700; }
+
+/**
+*Responsive
+*/
+@media only screen and (max-width: 1200px) {
+  .face, .slide, .about {
+    width: 80%; }
+  .slide2 {
+    flex-direction: column; }
+    .slide2__pic {
+      width: 100%; }
+      .slide2__pic > img {
+        height: 300px;
+        object-fit: cover;
+        object-position: bottom; }
+    .slide2__block {
+      width: 100%;
+      padding: 30px 0px 0px 0px;
+      justify-content: space-between;
+      flex-direction: row; }
+      .slide2__block__title {
+        width: 40%;
+        padding-left: 40px; }
+      .slide2__block__info {
+        width: 40%;
+        align-self: flex-end;
+        padding: 15px 30px; }
+  .slide3 {
+    flex-direction: column; }
+    .slide3__pic {
+      width: 100%; }
+      .slide3__pic > img {
+        height: 300px;
+        object-fit: cover;
+        object-position: bottom;
+        padding: 0px; }
+    .slide3__block {
+      width: 100%;
+      padding: 30px 0px 0px 0px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row; }
+      .slide3__block__title {
+        width: 40%;
+        padding-left: 40px;
+        position: initial;
+        align-self: center; }
+        .slide3__block__title--num {
+          color: #074d01; }
+      .slide3__block__info {
+        width: 40%;
+        align-self: flex-end;
+        padding: 15px 30px; } }
+
+@media only screen and (max-width: 768px) {
+  .face__title--txt {
+    font-size: 60px; }
+  .face__subtitle--box {
+    width: 265px; }
+  .face__subtitle--txt {
+    font-size: 18px; }
+  .slide__block {
+    flex-direction: column; }
+    .slide__block__title {
+      width: 100%; }
+      .slide__block__title--num, .slide__block__title--txt {
+        display: inline;
+        font-size: 45px; }
+    .slide__block__info {
+      width: 85%;
+      align-self: flex-start; }
+  .slide3__block__title {
+    align-self: initial; }
+  .slide3__block__info--pic {
+    width: 80%;
+    display: block;
+    margin: 0px auto; }
+  .about__title--txt {
+    font-size: 40px; } }
+
+@media only screen and (max-width: 576px) {
+  .face {
+    margin-top: 0px;
+    width: 100%;
+    height: 100vh; }
+    .face__title {
+      padding: 0px; }
+  .slide {
+    width: 100%; }
+    .slide__block__title {
+      padding: 15px 0px 15px 30px;
+      width: 80%; }
+      .slide__block__title--num, .slide__block__title--txt {
+        font-size: 45px; }
+    .slide__block__info {
+      padding: 15px 0px 15px 20px; }
+      .slide__block__info--title {
+        font-size: 25px; }
+      .slide__block__info--txt {
+        font-size: 20px; }
+  .about {
+    width: 100%;
+    margin-bottom: 0px; }
+    .about__title--txt {
+      font-size: 40px; }
+    .about__subtitle {
+      width: 50%; }
+    .about__icons {
+      padding: 10px 0px; }
+      .about__icons--icon {
+        margin: 0px 20px; }
+    .about__more {
+      display: none; } }
+
+
+/*# sourceMappingURL=build.css.map*/

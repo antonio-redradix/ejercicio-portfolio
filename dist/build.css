@@ -1,0 +1,600 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+  outline: 0; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none; }
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0; }
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+body {
+  background-color: #343475; }
+
+.Board, .Board--Title, .Board--TopPhoto, .Board--LeftPhoto, .Board--Mid, .Board--SocialMedia {
+  box-sizing: border-box;
+  position: relative;
+  height: auto;
+  background-color: #63145A;
+  margin: 50px auto;
+  color: #D8E0FF; }
+  @media only screen and (max-width: 800px) {
+    .Board, .Board--Title, .Board--TopPhoto, .Board--LeftPhoto, .Board--Mid, .Board--SocialMedia {
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column; } }
+  @media only screen and (min-width: 800px) {
+    .Board, .Board--Title, .Board--TopPhoto, .Board--LeftPhoto, .Board--Mid, .Board--SocialMedia {
+      width: 70vw;
+      min-height: 80vh; } }
+  .Board--Title {
+    background-image: url("https://prnoticias.com/media/k2/items/cache/32209511ec91c2f6e71c3029d7947c75_XL.jpg?t=1567151644");
+    background-position: center;
+    background-size: cover; }
+    .Board--Title h1 {
+      font-size: 50px;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto; }
+    .Board--Title span {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto;
+      padding-left: 2%;
+      padding-right: 2%;
+      margin: 0 auto;
+      border: solid 2px white;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center; }
+  .Board--TopPhoto__imgContainer {
+    background-image: url("https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/11/29/Recortada/_20181106115917554-kbqC-U453231543689ofC-992x558@LaVanguardia-Web.jpg");
+    background-position: center;
+    background-size: cover; }
+    @media only screen and (max-width: 800px) {
+      .Board--TopPhoto__imgContainer {
+        height: 40px;
+        width: 100px; } }
+    @media only screen and (min-width: 800px) {
+      .Board--TopPhoto__imgContainer {
+        height: 350px;
+        width: 100%; } }
+  @media only screen and (max-width: 800px) {
+    .Board--TopPhoto .flex-div {
+      height: 60%;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around; } }
+  @media only screen and (min-width: 800px) {
+    .Board--TopPhoto .flex-div {
+      height: 50%;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap; } }
+  @media only screen and (min-width: 800px) {
+    .Board--TopPhoto .descriptionContainer {
+      width: 35%;
+      height: 45%; } }
+  .Board--LeftPhoto .imgContainer, .Board--LeftPhoto .Board--TopPhoto__imgContainer {
+    background-image: url("https://www.mundodeportivo.com/r/GODO/MD/p6/Barca/Imagenes/2019/03/05/Recortada/img_ssole_20181031-155142_imagenes_md_terceros_mosaico_2_1_4_5_2754990734-kXAH-U468582470501LD-980x554@MundoDeportivo-Web.jpg");
+    background-position: center;
+    background-size: auto; }
+    @media only screen and (min-width: 800px) {
+      .Board--LeftPhoto .imgContainer, .Board--LeftPhoto .Board--TopPhoto__imgContainer {
+        height: 350px;
+        width: 60%;
+        align-self: flex-start;
+        display: inline-block; } }
+  @media only screen and (max-width: 800px) {
+    .Board--LeftPhoto .flex-div {
+      height: 60%;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around; } }
+  @media only screen and (min-width: 800px) {
+    .Board--LeftPhoto .flex-div {
+      position: absolute;
+      height: 100%;
+      width: 38%;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap; } }
+  @media only screen and (min-width: 800px) {
+    .Board--LeftPhoto .titleContainer {
+      height: 40%;
+      width: 40%; } }
+  @media only screen and (min-width: 800px) {
+    .Board--LeftPhoto .titleContainer .descriptionContainer {
+      height: 40%;
+      width: 60%;
+      background-color: #95625E; } }
+  @media only screen and (min-width: 800px) {
+    .Board--Mid {
+      margin-top: 20px; } }
+  @media only screen and (max-width: 800px) {
+    .Board--Mid {
+      height: auto; } }
+  .Board--Mid .imgContainer, .Board--Mid .Board--TopPhoto__imgContainer {
+    position: absolute;
+    background-image: url("https://www.esmadrid.com/sites/default/files/styles/content_type_full/public/recursosturisticos/infoturistica/interior_atletico_tourwandametropolitano.jpg?itok=6M35XYS5"); }
+    @media only screen and (min-width: 800px) {
+      .Board--Mid .imgContainer, .Board--Mid .Board--TopPhoto__imgContainer {
+        height: 50%;
+        width: 45%;
+        display: inline-block;
+        margin-top: 15%; } }
+    @media only screen and (max-width: 800px) {
+      .Board--Mid .imgContainer, .Board--Mid .Board--TopPhoto__imgContainer {
+        height: 250px; } }
+  @media only screen and (min-width: 800px) {
+    .Board--Mid .titleContainer {
+      position: absolute;
+      height: 25%;
+      width: 25%;
+      margin-top: 15%;
+      margin-left: 37%; } }
+  @media only screen and (min-width: 800px) {
+    .Board--Mid .descriptionContainer {
+      position: absolute;
+      height: 70%;
+      width: 35%;
+      margin-top: 10%;
+      margin-left: 65%; } }
+  @media only screen and (max-width: 800px) {
+    .Board--Mid .flex-div {
+      margin-top: 250px;
+      height: 60%;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around; } }
+  .Board--SocialMedia__icons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 150px; }
+    @media only screen and (max-width: 800px) {
+      .Board--SocialMedia__icons {
+        top: 80%;
+        left: 10%; } }
+    @media only screen and (min-width: 800px) {
+      .Board--SocialMedia__icons {
+        top: 75%;
+        left: 35%; } }
+    .Board--SocialMedia__icons a img {
+      width: 70px;
+      height: 70px; }
+
+.Quoted-Image {
+  background-image: url("https://imagizer.prod.carbyne.ps.ooyala.com/1400x768/https://s3-eu-west-1.amazonaws.com/ingest-mediaset1-production.carbyne.ps.ooyala.com/993zsddpvgfa_masthead-champions_league.jpg");
+  width: 100%; }
+  @media only screen and (min-width: 800px) {
+    .Quoted-Image {
+      height: 400px; } }
+  @media only screen and (max-width: 800px) {
+    .Quoted-Image {
+      height: 550px;
+      background-size: auto;
+      background-position: center; } }
+  .Quoted-Image__Text {
+    text-align: center; }
+    @media only screen and (min-width: 800px) {
+      .Quoted-Image__Text {
+        width: 60%;
+        padding-top: 120px;
+        padding-left: 170px; } }
+    @media only screen and (max-width: 800px) {
+      .Quoted-Image__Text {
+        width: 90%;
+        padding-top: 50px;
+        padding-left: 20px; } }
+  .Quoted-Image h1 {
+    font-size: 45px;
+    margin: 5px; }
+    @media only screen and (max-width: 800px) {
+      .Quoted-Image h1 {
+        align-self: center;
+        text-align: center; } }
+
+.flex-div {
+  display: inline-flex;
+  align-content: space-around;
+  box-sizing: border-box; }
+
+.imgContainer, .Board--TopPhoto__imgContainer {
+  background-color: red;
+  background-position: center;
+  background-size: auto; }
+  @media only screen and (max-width: 800px) {
+    .imgContainer, .Board--TopPhoto__imgContainer {
+      height: 40vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; } }
+
+.titleContainer {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
+  /*@media only screen and(min-width:$iphone-px) {
+        width: 35%;
+        height: 45%;
+    }*/ }
+  .titleContainer h1 {
+    font-size: 45px;
+    margin: 5px; }
+    @media only screen and (max-width: 800px) {
+      .titleContainer h1 {
+        align-self: center;
+        text-align: center; } }
+  .titleContainer span {
+    font-size: 45px;
+    margin: 5px;
+    color: #95625E; }
+    @media only screen and (max-width: 800px) {
+      .titleContainer span {
+        align-self: center; } }
+  @media only screen and (max-width: 800px) {
+    .titleContainer {
+      width: 200px; } }
+
+.descriptionContainer {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 25px; }
+  .descriptionContainer img {
+    width: 40%;
+    height: 30%;
+    align-self: center;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .descriptionContainer h2 {
+    align-self: center;
+    font-size: 35px;
+    color: #95625E; }
+  .descriptionContainer p {
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    text-align: justify; }
+  @media only screen and (max-width: 800px) {
+    .descriptionContainer {
+      width: 100%;
+      text-align: center; } }
+
+* {
+  font-family: Arial, Helvetica, sans-serif; }
+  @media only screen and (max-width: 800px) {
+    * {
+      line-height: 40px;
+      font-size: 50px; } }
+
+
+/*# sourceMappingURL=build.css.map*/

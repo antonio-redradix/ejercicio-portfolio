@@ -1,0 +1,393 @@
+@import 'reset';
+$iphone-px: 800px;
+
+body {
+    background-color: #343475;
+}
+
+.Board {
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+
+    @media only screen and(max-width:$iphone-px) {
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media only screen and(min-width:$iphone-px) {
+        width: 70vw;
+        min-height: 80vh;
+    }
+
+    background-color: #63145A;
+    margin: 50px auto;
+    color: #D8E0FF;
+
+    &--Title {
+        @extend .Board;
+        background-image: url("https://prnoticias.com/media/k2/items/cache/32209511ec91c2f6e71c3029d7947c75_XL.jpg?t=1567151644");
+        background-position: center;
+        background-size: cover;
+
+        h1 {
+            font-size: 50px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0 auto;
+        }
+
+        span {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0 auto;
+            padding-left: 2%;
+            padding-right: 2%;
+            margin: 0 auto;
+            border: solid 2px white;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    &--TopPhoto {
+        @extend .Board;
+
+        &__imgContainer {
+            @extend .imgContainer;
+
+            @media only screen and(max-width:$iphone-px) {
+                height: 40px;
+                width: 100px;
+            }
+
+            @media only screen and(min-width:$iphone-px) {
+                height: 350px;
+                width: 100%;
+            }
+
+            background-image: url("https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/11/29/Recortada/_20181106115917554-kbqC-U453231543689ofC-992x558@LaVanguardia-Web.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .flex-div {
+            @media only screen and(max-width:$iphone-px) {
+                height: 60%;
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            @media only screen and(min-width:$iphone-px) {
+                height: 50%;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+
+        }
+
+        .descriptionContainer {
+            @media only screen and(min-width:$iphone-px) {
+                width: 35%;
+                height: 45%;
+            }
+        }
+    }
+
+    &--LeftPhoto {
+        @extend .Board;
+
+        .imgContainer {
+            background-image: url("https://www.mundodeportivo.com/r/GODO/MD/p6/Barca/Imagenes/2019/03/05/Recortada/img_ssole_20181031-155142_imagenes_md_terceros_mosaico_2_1_4_5_2754990734-kXAH-U468582470501LD-980x554@MundoDeportivo-Web.jpg");
+            background-position: center;
+            background-size: auto;
+
+            @media only screen and(min-width:$iphone-px) {
+                height: 350px;
+                width: 60%;
+                align-self: flex-start;
+                display: inline-block;
+            }
+        }
+
+        .flex-div {
+
+            @media only screen and(max-width:$iphone-px) {
+                height: 60%;
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            @media only screen and(min-width:$iphone-px) {
+                position: absolute;
+                height: 100%;
+                width: 38%;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        .titleContainer {
+            @media only screen and(min-width:$iphone-px) {
+                height: 40%;
+                width: 40%;
+            }
+
+            .descriptionContainer {
+                @media only screen and(min-width:$iphone-px) {
+                    height: 40%;
+                    width: 60%;
+                    background-color: #95625E;
+                }
+            }
+        }
+    }
+
+    &--Mid {
+        @extend .Board;
+
+        @media only screen and(min-width:$iphone-px) {
+            margin-top: 20px;
+        }
+
+        @media only screen and(max-width:$iphone-px) {
+            height: auto;
+        }
+
+        .imgContainer {
+            position: absolute;
+            background-image: url("https://www.esmadrid.com/sites/default/files/styles/content_type_full/public/recursosturisticos/infoturistica/interior_atletico_tourwandametropolitano.jpg?itok=6M35XYS5");
+
+            @media only screen and(min-width:$iphone-px) {
+                height: 50%;
+                width: 45%;
+                display: inline-block;
+                margin-top: 15%;
+            }
+
+            @media only screen and(max-width:$iphone-px) {
+                height: 250px;
+            }
+        }
+
+        .titleContainer {
+            @media only screen and(min-width:$iphone-px) {
+                position: absolute;
+                height: 25%;
+                width: 25%;
+                margin-top: 15%;
+                margin-left: 37%;
+            }
+        }
+
+        .descriptionContainer {
+            @media only screen and(min-width:$iphone-px) {
+                position: absolute;
+                height: 70%;
+                width: 35%;
+                margin-top: 10%;
+                margin-left: 65%;
+            }
+        }
+
+        .flex-div {
+            @media only screen and(max-width:$iphone-px) {
+                margin-top: 250px;
+                height: 60%;
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    &--SocialMedia {
+        @extend .Board;
+        &__icons {
+            position: absolute;
+            @media only screen and(max-width:$iphone-px) {
+                top:80%;
+                left:10%;
+            }
+            @media only screen and(min-width:$iphone-px) {
+                top:75%;
+                left: 35%;
+            }
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            a {
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+
+
+
+}
+.Quoted-Image{
+    background-image: url("https://imagizer.prod.carbyne.ps.ooyala.com/1400x768/https://s3-eu-west-1.amazonaws.com/ingest-mediaset1-production.carbyne.ps.ooyala.com/993zsddpvgfa_masthead-champions_league.jpg");
+    width: 100%;
+    @media only screen and(min-width:$iphone-px) {
+        height: 400px;
+    }    
+    @media only screen and(max-width:$iphone-px) {
+        height: 550px;
+        background-size: auto;
+        background-position: center;
+    }
+    &__Text{
+        
+        text-align: center;
+        @media only screen and(min-width:$iphone-px) {
+            width: 60%;
+            padding-top: 120px;
+            padding-left: 170px;
+
+        }    
+        @media only screen and(max-width:$iphone-px) {
+            width: 90%;
+            padding-top: 50px;
+            padding-left: 20px;
+        }
+    }
+    h1{       
+            font-size: 45px;
+            margin: 5px;
+    
+            @media only screen and(max-width:$iphone-px) {
+                align-self: center;
+                text-align: center;
+            }
+    }
+}
+.flex-div {
+    display: inline-flex;
+    align-content: space-around;
+    box-sizing: border-box;
+    //margin-left: 10px;
+    //margin-right: 10px;
+}
+
+.imgContainer {
+    background-color: red;
+    background-position: center;
+    background-size: auto;
+
+    //width: 100%;
+    //height: 50%;
+    @media only screen and(max-width:$iphone-px) {
+        height: 40vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.titleContainer {
+    align-self: center;
+
+    h1 {
+        font-size: 45px;
+        margin: 5px;
+
+        @media only screen and(max-width:$iphone-px) {
+            align-self: center;
+            text-align: center;
+        }
+    }
+
+    span {
+        font-size: 45px;
+        margin: 5px;
+        color: #95625E;
+
+        @media only screen and(max-width:$iphone-px) {
+            align-self: center;
+        }
+
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+
+    /*@media only screen and(min-width:$iphone-px) {
+        width: 35%;
+        height: 45%;
+    }*/
+
+    @media only screen and(max-width:$iphone-px) {
+        width: 200px;
+    }
+}
+
+.descriptionContainer {
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    img {
+        width: 40%;
+        height: 30%;
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        align-self: center;
+        font-size: 35px;
+        color: #95625E;
+    }
+
+    p {
+        margin: 0 auto;
+        width: calc(100% - 40px);
+        text-align: justify;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+
+    @media only screen and(max-width:$iphone-px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+* {
+    @media only screen and(max-width:$iphone-px) {
+        line-height: 40px;
+        font-size: 50px;
+    }
+
+    font-family: Arial,
+    Helvetica,
+    sans-serif;
+
+}

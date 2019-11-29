@@ -1,0 +1,556 @@
+body {
+    display: block;
+    background-color: #DBFFF6;
+
+
+    .welcome {
+        background-image: url("https://cdn.pixabay.com/photo/2014/05/02/21/49/home-office-336373_1280.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 80vh;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7%;
+        margin-bottom: 5%;
+
+
+        &__title {
+            position: relative;
+            color: whitesmoke;
+            letter-spacing: 9px;
+            text-align: center;
+            font-weight: 1000;
+            font-size: xx-large;
+            top: 40%;
+            left: 0.3%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+
+            &--subtitle {
+                position: relative;
+                color: whitesmoke;
+                text-align: center;
+                padding-left: 1%;
+                border: white;
+                border-style: solid;
+                padding-right: 1%;
+                margin-right: auto;
+                margin-left: auto;
+                top: 40%;
+                width: max-content;
+            }
+        }
+    }
+
+    .divslice {
+        background-color: white;
+        height: 80vh;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        position: relative;
+
+
+        &__img1 {
+            display: block;
+            background-image: url("https://cdn.pixabay.com/photo/2015/06/08/15/11/typewriter-801921_1280.jpg");
+            background-position: center center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 40vh;
+            width: 80vw;
+        }
+
+        &__tit1 {
+            position: absolute;
+            height: 40vh;
+            width: 40vw;
+            bottom: 0%;
+
+
+            &__num {
+                position: absolute;
+                font-size: 50px;
+                color: goldenrod;
+                left: 10%;
+                margin-top: 0%;
+                top: 15%;
+            }
+
+            &__tit {
+                position: absolute;
+                font-size: 30px;
+                color: black;
+                font-weight: bolder;
+                top: 45%;
+                left: 10%;
+                width: 60%;
+            }
+        }
+
+        &__text1 {
+            position: absolute;
+            height: 40vh;
+            width: 80vw;
+            bottom: 0%;
+
+
+            &__tit {
+                position: absolute;
+                color: goldenrod;
+                font-size: large;
+                right: 5%;
+                width: 40%;
+                top: 10%;
+            }
+
+            &__p1 {
+                position: absolute;
+                font-size: smaller;
+                text-align: justify;
+                line-height: 1.5;
+                width: 40%;
+                height: 50%;
+                bottom: 20%;
+                right: 5%;
+            }
+
+            &__p2 {
+                position: absolute;
+                font-size: smaller;
+                text-align: justify;
+                line-height: 1.5;
+                width: 20%;
+                height: 70%;
+                bottom: 20%;
+                right: 5%;
+            }
+
+            &__p3 {
+                position: absolute;
+                font-size: smaller;
+                text-align: justify;
+                line-height: 1.5;
+                width: 15%;
+                height: 70%;
+                bottom: 12%;
+                right: 5%;
+            }
+        }
+
+        &__h3 {
+            position: absolute;
+            color: goldenrod;
+            font-size: large;
+            right: 5%;
+            width: 15%;
+            top: 52%;
+        }
+
+        &__img2 {
+            display: block;
+            background-image: url("https://cdn.pixabay.com/photo/2019/11/02/20/18/fog-4597348_1280.jpg");
+            background-position: center center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 70%;
+            width: 65%;
+        }
+
+        &__tit2 {
+            position: absolute;
+            height: 40vh;
+            width: 30%;
+            left: 72%;
+            top: 10%;
+            margin-left: 0%;
+        }
+
+        &__title2 {
+            position: absolute;
+            color: goldenrod;
+            font-size: large;
+            right: 5%;
+            width: 20%;
+            top: 45%;
+        }
+
+        &__img3 {
+            display: block;
+            background-image: url("https://cdn.pixabay.com/photo/2017/08/23/11/12/notebook-2672467_1280.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 70%;
+            width: 65%;
+            position: absolute;
+            bottom: 10%;
+        }
+
+        &__tit3 {
+            position: absolute;
+            height: 40vh;
+            width: 40%;
+            left: 86%;
+            top: 0%;
+            margin-left: 0%;
+        }
+
+        &__img4 {
+            display: block;
+            background-image: url("https://cdn.pixabay.com/photo/2014/05/03/01/03/macbook-336704_1280.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 90px;
+            width: 70px;
+            position: absolute;
+            right: 5%;
+            width: 15%;
+            top: 30%;
+        }
+    }
+
+    .final {
+        background-color: cadetblue;
+        height: 80vh;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+
+        &__img5 {
+            background-image: url("https://cdn.pixabay.com/photo/2017/08/23/11/25/notebook-2672549_1280.jpg");
+            background-position: center center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            height: 80%;
+            opacity: 50%;
+            position: relative;
+
+            &__conclusion {
+                height: 20%;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: 1000;
+                text-align: center;
+                font-size: 50px;
+                padding-top: 12%;
+            }
+
+            &__autor {
+                color: whitesmoke;
+                border: whitesmoke;
+                border-style: solid;
+                text-align: center;
+                width: max-content;
+                margin-left: auto;
+                position: relative;
+                margin-right: auto;
+            }
+        }
+
+        &__redes {
+            margin-left: 42%;
+
+            &__pie {
+                display: inline-block;
+                height: 1%;
+                width: 1%;
+                margin-top: 5%;
+                margin-left: 4%;
+            }
+        }
+
+    }
+
+    p {
+        height: 20%;
+        width: 80%;
+        font-size: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        letter-spacing: 10px;
+        font-weight: 1000;
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+    body {
+        display: block;
+        background-color: #DBFFF6;
+        margin: 0;
+
+        .welcome {
+            background-image: url(https://cdn.pixabay.com/photo/2014/05/02/21/49/home-office-336373_1280.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 667px;
+            width: 375px;
+            margin-top: 0%;
+            margin-bottom: 5%;
+
+            &__title {
+                position: relative;
+                color: whitesmoke;
+                text-align: center;
+                top: 36%;
+                font-weight: bold;
+                width: 30%;
+                left: -8%;
+
+                &--subtitle {
+                    position: absolute;
+                    color: whitesmoke;
+                    border-style: solid;
+                    text-align: center;
+                    top: 41%;
+                    width: auto;
+                    padding-left: 1.5%;
+                    padding-right: 1.5%;
+                    left: 27%;
+                }
+            }
+        }
+
+        .divslice {
+            background-color: white;
+            height: 667px;
+            width: 375px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            position: relative;
+
+            &__img1 {
+                display: block;
+                background-image: url(https://cdn.pixabay.com/photo/2015/06/08/15/11/typewriter-801921_1280.jpg);
+                background-position: center center;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                height: 300px;
+                width: 375px;
+            }
+
+            &__tit1 {
+                position: absolute;
+                height: 40%;
+                width: 50%;
+                left: 25%;
+                top: 46%;
+
+                &__num {
+                    position: absolute;
+                    font-size: 50px;
+                    color: goldenrod;
+                    left: 35%;
+                    margin-top: 0%;
+                    top: 4%;
+                }
+
+                &__tit {
+                    position: absolute;
+                    font-size: 30px;
+                    color: black;
+                    font-weight: bolder;
+                    top: 30%;
+                    left: 10%;
+                    width: auto;
+                }
+            }
+
+            &__text1 {
+                position: absolute;
+                height: 40%;
+                width: 80%;
+                bottom: 0%;
+                margin-left: 9.5%;
+                margin-right: auto;
+
+                &__tit {
+                    position: absolute;
+                    color: goldenrod;
+                    font-size: large;
+                    width: auto;
+                    left: 30%;
+                    top: 16%;
+                }
+
+                &__p1 {
+                    position: absolute;
+                    font-size: smaller;
+                    text-align: justify;
+                    line-height: 1.5;
+                    bottom: 20%;
+                    width: fit-content;
+                    right: 0%;
+                }
+
+
+                &__p2 {
+                    position: absolute;
+                    font-size: smaller;
+                    text-align: justify;
+                    line-height: 1.5;
+                    width: auto;
+                    bottom: 20%;
+                    right: 0;
+                    height: auto;
+                }
+
+                &__p3 {
+                    bottom: -33%;
+                    position: absolute;
+                    font-size: smaller;
+                    text-align: justify;
+                    line-height: 1.5;
+                    top: 59%;
+                    width: auto;
+                    right: 0%;
+                }
+            }
+
+            &__img2 {
+                display: block;
+                background-image: url(https://cdn.pixabay.com/photo/2019/11/02/20/18/fog-4597348_1280.jpg);
+                background-position: center center;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                height: 300px;
+                width: 375px;
+            }
+
+            &__tit2 {
+                position: absolute;
+                height: 40%;
+                width: 60%;
+                left: 20%;
+                top: 50%;
+            }
+
+            &__title2 {
+                color: goldenrod;
+                font-size: large;
+                width: 35%;
+                left: 31.7%;
+                top: 71%;
+            }
+
+            &__img3 {
+                display: block;
+                background-image: url(https://cdn.pixabay.com/photo/2017/08/23/11/12/notebook-2672467_1280.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                height: 300px;
+                width: 375px;
+                top: 0%;
+            }
+
+            &__tit3 {
+                position: absolute;
+                width: 50%;
+                left: 24%;
+                top: 102%;
+                margin-left: 0%;
+            }
+
+            &__h3 {
+                position: absolute;
+                color: goldenrod;
+                font-size: large;
+                width: auto;
+                top: 81%;
+                left: 31%;
+            }
+
+            &__img4 {
+                left: 31%;
+                display: block;
+                background-image: url(https://cdn.pixabay.com/photo/2014/05/03/01/03/macbook-336704_1280.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                height: 90px;
+                position: absolute;
+                right: 35%;
+                width: 34%;
+                top: 66%;
+            }
+
+        }
+
+        .final {
+            background-color: cadetblue;
+            height: 667px;
+            width: 375px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+
+            &__img5 {
+                background-image: url(https://cdn.pixabay.com/photo/2017/08/23/11/25/notebook-2672549_1280.jpg);
+                background-position: center center;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                height: 80%;
+                opacity: 50%;
+                position: relative;
+
+                &__conclusion {
+                    height: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-weight: 1000;
+                    text-align: center;
+                    font-size: 50px;
+                    padding-top: 12%;
+                    padding-left: 5%;
+                }
+
+                &__autor {
+                    color: whitesmoke;
+                    border-style: solid;
+                    text-align: center;
+                    width: auto;
+                    position: absolute;
+                    left: 32%;
+                    top: 76%;
+                    bottom: auto;
+                }
+            }
+
+            &__redes {
+                margin-left: 26%;
+
+                &__pie {
+                    display: inline-block;
+                    height: 1%;
+                    width: 1%;
+                    margin-top: 5%;
+                    margin-left: 10%;
+                }
+            }
+        }
+
+        p {
+            height: 20%;
+            width: 80%;
+            font-size: 100px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            text-align: center;
+            letter-spacing: 10px;
+            font-weight: 1000;
+        }
+
+
+    }
+}

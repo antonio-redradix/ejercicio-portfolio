@@ -1,0 +1,22 @@
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.figure {
+    @extend .centered;
+    background-color: #222;
+
+&__image {
+    @extend .centered ;
+    width: 200px;
+    height: 200px;
+}
+
+&__caption {
+    @extend .centered ;
+    font-size:12px;
+}
+}

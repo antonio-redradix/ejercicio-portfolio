@@ -1,0 +1,265 @@
+body {
+  background-color: #ad9261; }
+
+.placeholder {
+  background-color: #703F1F;
+  font-family: "Raleway";
+  position: relative;
+  margin: 5% auto;
+  width: 75%;
+  height: 600px; }
+  .placeholder__block-center {
+    font-weight: bold;
+    line-height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .placeholder__block-center__button {
+      display: block;
+      background-color: rgba(0, 0, 0, 0);
+      border: 2px solid #F3FFC6;
+      font-family: "Raleway";
+      font-size: 15px;
+      text-align: center;
+      margin: 0 auto;
+      width: 30%;
+      height: auto;
+      color: #F3FFC6; }
+  .placeholder__block-bottom {
+    background-color: #703F1F;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0; }
+  .placeholder__block-padding {
+    height: 100%;
+    padding: 20px;
+    box-sizing: content-box; }
+    .placeholder__block-padding__title-number {
+      display: block;
+      margin: 0;
+      font-size: 60px;
+      color: #e0bb50; }
+    .placeholder__block-padding__title {
+      display: block;
+      margin: 0;
+      font-size: 40px;
+      color: #F3FFC6; }
+    .placeholder__block-padding__text {
+      font-size: 11px;
+      text-align: justify;
+      color: #F3FFC6;
+      line-height: 23px; }
+  .placeholder__block-relative {
+    position: relative; }
+  .placeholder__block-center__title {
+    font-size: 75px;
+    color: #F3FFC6;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    word-spacing: 5px; }
+    .placeholder__block-center__title--end {
+      font-size: 42px;
+      color: #F3FFC6;
+      text-align: center;
+      margin: 0 auto;
+      width: 80%;
+      word-spacing: 5px;
+      line-height: 60px;
+      margin-bottom: 20px; }
+
+.div-logo {
+  background-color: #703F1F;
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.container-logo {
+  display: inline-block;
+  position: relative;
+  padding: 0 15px; }
+
+.logo {
+  width: 25px;
+  height: 25px; }
+
+.content-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%; }
+
+.content-column {
+  flex: 1;
+  height: 100%; }
+  .content-column--bottom {
+    flex: 1;
+    height: 100%; }
+
+.content-column-double {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  height: 100%; }
+
+.brown-column {
+  background-color: #703F1F; }
+
+#placeholder__block-padding__margin {
+  margin-top: 40px; }
+
+#container-text-3 {
+  position: absolute;
+  top: 20%;
+  right: 0; }
+
+#placeholder__image1 {
+  background-image: url(aeeb024085cb5846d378fe704aaccf9d.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+#placeholder__image2 {
+  background-image: url(1d4a67ed4b4ad7d72b895cf7b904d19d.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+#placeholder__image3 {
+  background-image: url(e038ef9b65d09038c89a722072eb053c.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+#placeholder__image-6 {
+  background-image: url(baa806f64072b59fb1ded7b77cb4c9a9.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+h4 {
+  margin: 0;
+  color: #e0bb50; }
+
+#placeholder__image-4 {
+  background-image: url(87bed1bda127de042d8cba8cb7e9edde.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 85%;
+  height: 400px;
+  background-position: left;
+  object-fit: cover;
+  margin-top: 80px; }
+
+#placeholder__image-5 {
+  background-image: url(acecac225e4d67a2da1a5fb15f9144ee.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  height: 150px;
+  margin: 50px 0; }
+
+.quote {
+  font-family: Raleway;
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  margin: 0 auto;
+  height: 50px;
+  padding: 20px 0; }
+
+@media screen and (max-width: 950px) {
+  #placeholder__block-padding__margin {
+    margin-top: 50px; }
+  .placeholder__block-padding__text {
+    line-height: 18px; } }
+
+@media screen and (max-width: 645px) {
+  .placeholder {
+    margin: 10% auto;
+    width: 90%;
+    height: 450px; }
+    .placeholder__block-padding {
+      padding: 15px;
+      width: 100%;
+      box-sizing: border-box; }
+      .placeholder__block-padding__title {
+        font-size: 25px; }
+        .placeholder__block-padding__title-number {
+          font-size: 25px; }
+      .placeholder__block-padding__text {
+        line-height: 13px; }
+    .placeholder__block-center {
+      top: 42%; }
+      .placeholder__block-center__title {
+        font-size: 50px; }
+        .placeholder__block-center__title--end {
+          font-size: 16px;
+          line-height: 30px; }
+      .placeholder__block-center__button {
+        width: 60%;
+        font-size: 13px; }
+  .content-column-double {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 100%; }
+  .content-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .content-column {
+    width: 100%; }
+  .content-column--bottom {
+    position: absolute;
+    bottom: 0;
+    height: auto; }
+  #placeholder__block-padding__margin {
+    margin-top: 0;
+    margin-bottom: 20px; }
+  #placeholder__image1 {
+    background-position: center; }
+  #placeholder__image2 {
+    background-position: center; }
+  #placeholder__image3 {
+    background-position: center; }
+  .placeholder__block-relative {
+    position: absolute;
+    width: 100%;
+    height: auto; }
+  #placeholder__image-4 {
+    position: relative;
+    top: 0;
+    background-size: 100%;
+    background-position: center;
+    margin: 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 155px;
+    object-fit: cover; }
+  #placeholder__image-5 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 47%;
+    height: 95px;
+    margin: 0 auto;
+    object-fit: cover; }
+  #placeholder__image-6 {
+    background-position: center; }
+  .container-logo {
+    width: 5%; }
+  #container-text-3 {
+    position: relative; } }
+
+
+/*# sourceMappingURL=build.css.map*/

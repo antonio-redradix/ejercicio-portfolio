@@ -1,0 +1,274 @@
+body {
+  background-color: #C97F8B; }
+
+.box1 {
+  width: 75%;
+  height: 500px;
+  margin: 100px auto;
+  background-color: white; }
+  .box1__img {
+    background-image: url(f288d3404fe7f4edf2b7a38b7ce59408.jpg);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .box1__img__subbox__title {
+      color: white;
+      font-family: 'Roboto';
+      font-size: 40px;
+      letter-spacing: 3px; }
+    .box1__img__subbox__subt {
+      color: white;
+      border: 1px solid white;
+      font-size: 12px;
+      font-family: 'Roboto';
+      text-align: center; }
+
+.box2 {
+  width: 75%;
+  height: 500px;
+  margin: 100px auto;
+  background-color: white; }
+  .box2__img {
+    object-fit: cover;
+    width: 100%;
+    height: 60%; }
+  .box2__subbox {
+    width: 49%;
+    margin-top: 5%;
+    margin-left: 5%; }
+    .box2__subbox__num {
+      font-size: 40px;
+      font-family: 'Roboto';
+      font-weight: 900;
+      color: orange; }
+    .box2__subbox__title {
+      font-size: 40px;
+      font-family: 'Roboto';
+      font-weight: 900;
+      color: black; }
+  .box2__subbox2 {
+    width: 49%;
+    margin-left: 45%;
+    margin-top: -10%; }
+    .box2__subbox2__title {
+      font-size: 15px;
+      font-family: 'Roboto';
+      color: green;
+      font-weight: 900; }
+    .box2__subbox2__text {
+      font-size: 12px;
+      font-family: 'Roboto';
+      text-align: justify; }
+
+.box3 {
+  width: 75%;
+  height: 500px;
+  margin: 100px auto;
+  background-color: white; }
+  .box3__imgbox {
+    width: 70%;
+    height: 100%; }
+    .box3__imgbox__img {
+      object-fit: cover;
+      width: 100%;
+      height: 70%; }
+  .box3__subbox {
+    margin-left: 70%;
+    margin-top: -47%;
+    padding: 5%; }
+    .box3__subbox__subbox__num {
+      margin-bottom: 7%;
+      font-size: 40px;
+      font-family: 'Roboto';
+      font-weight: 900;
+      color: orange; }
+    .box3__subbox__subbox__title {
+      margin-bottom: 35%;
+      font-size: 40px;
+      font-family: 'Roboto';
+      font-weight: 900;
+      color: black; }
+    .box3__subbox__subbox2__title {
+      margin-bottom: 5%;
+      font-size: 15px;
+      font-family: 'Roboto';
+      color: green;
+      font-weight: 900; }
+    .box3__subbox__subbox2__text {
+      font-size: 12px;
+      font-family: 'Roboto';
+      text-align: justify; }
+
+.box4 {
+  width: 75%;
+  height: 500px;
+  margin: 100px auto;
+  background-color: white; }
+  .box4__img {
+    margin-top: 10%;
+    object-fit: cover;
+    width: 60%;
+    height: 70%; }
+  .box4__subbox {
+    margin-left: 53%;
+    margin-top: -35%; }
+    .box4__subbox__num {
+      font-size: 45px;
+      margin-bottom: 3%;
+      font-family: 'Roboto';
+      color: white;
+      font-weight: 900; }
+    .box4__subbox__title {
+      font-size: 40px;
+      font-family: 'Roboto';
+      font-weight: 900;
+      color: black; }
+  .box4__subbox2 {
+    margin-top: -7%;
+    margin-left: 75%;
+    width: 20%; }
+    .box4__subbox2__img {
+      object-fit: cover;
+      width: 100%;
+      height: 70%;
+      margin-bottom: 7%; }
+    .box4__subbox2__subbox__title {
+      margin-bottom: 5%;
+      text-align: center;
+      font-size: 15px;
+      font-family: 'Roboto';
+      color: green;
+      font-weight: 900; }
+    .box4__subbox2__subbox__text {
+      text-align: center;
+      font-size: 12px;
+      font-family: 'Roboto';
+      text-align: justify; }
+
+.box5 {
+  width: 75%;
+  height: 500px;
+  margin: 100px auto;
+  background-color: white; }
+  .box5__img {
+    background-image: url(1f6319d3987056d340506d717dcccd3a.jpg);
+    height: 85%; }
+  .box5__subbox {
+    margin-top: -30%; }
+    .box5__subbox__comillas--a {
+      text-align: center;
+      color: white;
+      font-size: 60px;
+      font-family: 'Be Vietnam', sans-serif; }
+    .box5__subbox__comillas--c {
+      margin-top: 2%;
+      text-align: center;
+      color: white;
+      font-size: 60px;
+      font-family: 'Be Vietnam', sans-serif; }
+    .box5__subbox__text {
+      padding-right: 15%;
+      padding-left: 15%;
+      margin-top: -3%;
+      color: white;
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Oxygen', sans-serif; }
+      .box5__subbox__text__subt {
+        margin-top: 5%;
+        margin-left: 30%;
+        color: white;
+        border: 2px solid white;
+        font-size: 14px;
+        font-family: 'Roboto';
+        text-align: center;
+        width: 40%; }
+  .box5__icons {
+    margin-left: 45%; }
+    .box5__icons__icon {
+      width: 20px;
+      height: 20px; }
+
+.morebox {
+  background-color: #C97F8B;
+  width: 75%;
+  margin: 100px auto;
+  text-align: center;
+  font-size: 70px;
+  letter-spacing: 0.5ch;
+  font-family: 'Lato', sans-serif; }
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0; }
+  .box1, .box2, .box3, .box4, .box5 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0; }
+  .morebox {
+    width: 100vw;
+    margin: 0;
+    background-color: white; }
+  .box1__img__subbox {
+    margin-top: -35%; }
+  .box2__img {
+    height: 30%; }
+  .box2__subbox {
+    margin-left: 25%; }
+    .box2__subbox__num {
+      margin-left: 35%;
+      margin-bottom: 10%; }
+  .box2__subbox2 {
+    margin-top: 20%;
+    margin-left: 25%; }
+    .box2__subbox2__title {
+      text-align: center;
+      margin-bottom: 5%; }
+  .box3__imgbox {
+    width: 100%;
+    height: 30%; }
+    .box3__imgbox__img {
+      height: 100%; }
+  .box3__subbox {
+    display: inline; }
+    .box3__subbox__subbox {
+      margin-left: 25%; }
+      .box3__subbox__subbox__num {
+        margin-left: 23%; }
+      .box3__subbox__subbox__title {
+        margin-bottom: 25%; }
+    .box3__subbox__subbox2 {
+      width: 50%;
+      margin-left: 25%; }
+      .box3__subbox__subbox2__title {
+        text-align: center; }
+  .box4__img {
+    margin-top: 0%;
+    width: 100%;
+    height: 30%; }
+  .box4__subbox {
+    display: inline; }
+    .box4__subbox__num {
+      color: orange;
+      margin-left: 42%;
+      margin-bottom: 5%; }
+    .box4__subbox__title {
+      margin-left: 25%; }
+  .box4__subbox2 {
+    width: 45%;
+    height: 20%;
+    margin-top: 2%;
+    margin-left: 26%; }
+  .box5__img {
+    height: 95%; }
+  .box5__subbox {
+    margin-top: -135%; }
+    .box5__subbox__text {
+      font-size: 30px; }
+  .box5__icons {
+    margin-left: 37%;
+    margin-top: 41%; } }
+
+
+/*# sourceMappingURL=build.css.map*/

@@ -3,61 +3,58 @@ body {
     width: 100vw;
 }
 
-.diapositiva {
-
-    height: 400px;
-    width: 700px;
-    background-color: white;
-    margin: auto;
-    margin-top: 3%;
-    position: relative;
+.diapositivaini {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &__title {
+        align-self: center;
         font-size: 50px;
-        position: absolute;
-        top: 30%;
         color: white;
         font-size: 50px;
-        text-align: center;
-        right: 40%;
     }
 
     &__subtitle {
-        position: absolute;
-        top: 200px;
-        width: 300px;
-        height: 30px;
-        left: 190px;
+        align-self: center;
+        width: 280px;
         color: white;
         font-size: 20px;
-        text-align: center;
         padding-left: 10px;
         border: 2px solid white;
     }
 }
 
+.diapositiva {
+    height: 400px;
+    width: 700px;
+    background-color: white;
+    margin: auto;
+    margin-top: 3%;
+
+}
+
 .diapositiva1 {
+    vertical-align: top;
 
     &__img {
-        height: 200px;
+        height: 50%;
         background-image: url("https://cdn2.lamag.com/wp-content/uploads/sites/6/2017/02/cm-coffee.jpg");
         background-position: bottom;
     }
 
     &__leftcolumn {
-        position: absolute;
-        top: 220px;
-        left: 30px;
+        text-align: center;
+        height: 50%;
+        width: 50%;
+        padding-top: 3%;
         display: inline-block;
     }
 
     &__rightcolumn {
-        position: absolute;
-        //float: right;
-        height: 200px;
-        width: 300px;
-        right: 30px;
-        top: 55%;
+        display: inline-block;
+        width: 40%;
+        height: 50%;
 
         & p {
             font-size: 13px;
@@ -69,23 +66,21 @@ body {
 
 .diapositiva2 {
     &__img {
-        height: 250px;
-        width: 430px;
-        right: 125px;
+        height: 65%;
+        width: 60%;
         background-image: url("https://www.thehealthy.com/wp-content/uploads/2019/03/shutterstock_188383172-800x450.jpg");
         background-position: right top;
         display: inline-block;
     }
 
     &__column {
-        height: 400px;
-        width: 210px;
+        height: 100%;
+        width: 30%;
         float: right;
         padding-right: 20px;
-        padding-left: 5px;
 
         & p {
-            width: 200px;
+            width: 100%;
             font-size: 13px;
             text-align: justify;
         }
@@ -97,10 +92,12 @@ body {
 }
 
 .diapositiva3 {
+    position: relative;
+
     &__img {
-        margin-top: 60px;
+        margin-top: 8%;
         display: inline-block;
-        height: 300px;
+        height: 70%;
         width: 450px;
         background-image: url("https://media.harpersbazaar.com.sg/2019/04/coffee-feat1-700x350.jpg");
 
@@ -119,27 +116,28 @@ body {
     }
 
     &__column {
-        position: absolute;
-        top: 110px;
-        right: 50px;
-        height: 400px;
-        width: 150px;
-        float: right;
+        display: inline-block;
+        height: 100%;
+        width: 20%;
+        margin-left: 7%;
 
         &__img {
             height: 100px;
             width: 150px;
-
         }
 
         & p {
+            width: 100%;
             font-size: 13px;
             text-align: justify;
         }
     }
 }
 
+
 .diapositivafinal {
+    position: relative;
+    text-align: center;
     &__img {
         padding-top: 40px;
         height: 300px;
@@ -149,7 +147,7 @@ body {
 
     &__links {
         position: relative;
-        top:5%;
+        margin-top: 5%;
         width: 700px;
         height: 50px;
         display: flex;
@@ -161,14 +159,21 @@ body {
         }
     }
 
-    & h1 {
+    &__title{
         position: absolute;
-        top: 60px;
+        top:60px;
         color: white;
         font-size: 50px;
-        text-align: center;
-        bottom: 20px;
-        right: 20px;
+    }
+    &__subtitle{
+        position: absolute;
+        top: 200px;
+        width: 300px;
+        height: 30px;
+        left: 190px;
+        color: white;
+        font-size: 20px;
+        border: 2px solid white;
     }
 }
 
@@ -177,7 +182,10 @@ body {
     background-image: url("https://scdn.slashgear.com/wp-content/uploads/2019/07/coffee_main_envat-1280x720.jpg");
 }
 
-p, h3, h5, .number {
+p,
+h3,
+h5,
+.number {
     color: #E0BB5A;
 }
 
@@ -212,26 +220,13 @@ footer {
     .diapositiva {
         width: 100vw;
         height: 600px;
-
-
-        &__title {
-            position: relative;
-            top: 40%;
-            right: 3%;
-        }
-
-        &__subtitle {
-            right: 0%;
-            top: 55%;
-            width: 80%;
-            padding-left: 0px;
-            left: 10%;
-        }
-
     }
 
     .diapositiva1 {
         height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         &__img {
             height: 40%;
@@ -239,15 +234,15 @@ footer {
         }
 
         &__leftcolumn {
-            top: 40%;
+            align-self: center;
             display: block;
-            left: 30%;
+            width: 100%;
+            height: 30%;
+
         }
 
         &__rightcolumn {
-            top: 65%;
-            display: block;
-            left: 10%;
+            align-self: center;
             width: 80%;
         }
     }
@@ -294,7 +289,6 @@ footer {
             }
 
             & h2 {
-
                 top: 42%;
                 left: 30%;
                 font-size: 30px;
@@ -303,18 +297,15 @@ footer {
         }
 
         &__column {
-
+            position: absolute;
             top: 55%;
-            left: 25%;
+            left: 15%;
             height: 30%;
             width: 60%;
-            float: none;
 
             &__img {
                 height: 130px;
                 width: 200px;
-
-
             }
 
             & p {
@@ -325,12 +316,23 @@ footer {
     }
 
     .diapositivafinal {
+        
+
         &__img {
             height: 80%;
             background-position: center;
         }
-        &__links{
+
+        &__links {
             width: 100vw;
+        }
+
+        &__subtitle{
+            right: 0%;
+            top: 55%;
+            width: 80%;
+            padding-left: 0px;
+            left: 10%;
         }
     }
 
@@ -342,8 +344,8 @@ footer {
 
     }
 
-   #Portfolio {
-    background-position: center;
-   }
+    #Portfolio {
+        background-position: center;
+    }
 
 }
